@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/Users/danluo/compilers/c_cpp/clang/instance00/build/bin/clang++",
+      "-c",
+      "-Wall",
+      "-std=c++2c",
+      "-g",
+      "-o",
+      "out/debug/macos/clover_tests",
+      "./tests.cpp"
+    ],
+    "directory": "/Users/danluo/libclover",
+    "file": "/Users/danluo/libclover/tests.cpp",
+    "output": "/Users/danluo/libclover/out/debug/macos/clover_tests"
+  }
+]
