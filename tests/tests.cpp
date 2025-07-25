@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "clover/arena.h"
-#include "clover/array_list.h"
+#include "../clover/arena.h"
+#include "../clover/array_list.h"
 
 typedef struct point
 {
-  int x;
-  int y;
-  int z;
+  int x, y, z;
 } point_t;
 
 int main()
@@ -17,41 +15,20 @@ int main()
 
   for (int i = 1; i <= 10; i += 1)
   {
-    point_t curr_point = {
-      .x = i * 12,
-      .y = i * 24,
-      .z = i * 30,
-    };
-
+    point_t curr_point = { .x = i * 12, .y = i * 24, .z = i * 30 };
     array_list_append(point_arr, curr_point);
   }
 
-  point_t curr_point = {
-    .x = 4,
-    .y = 5,
-    .z = 8,
-  };
+  point_t curr_point = { .x = 4, .y = 5, .z = 8 };
   array_list_insert(point_arr, 3, curr_point);
 
-  point_t curr_point_2 = {
-    .x = 0,
-    .y = 0,
-    .z = 0,
-  };
+  point_t curr_point_2 = { .x = 0, .y = 0, .z = 0 };
   array_list_insert(point_arr, 0, curr_point_2);
 
-  point_t curr_point_3 = {
-    .x = 9,
-    .y = 9,
-    .z = 9,
-  };
+  point_t curr_point_3 = { .x = 9, .y = 9, .z = 9 };
   array_list_insert(point_arr, 0, curr_point_3);
 
-  point_t curr_point_4 = {
-    .x = 0,
-    .y = 0,
-    .z = 0,
-  };
+  point_t curr_point_4 = { .x = 0, .y = 0, .z = 0 };
   array_list_insert(point_arr, 0, curr_point_4);
 
   array_list_remove(point_arr, 0);
